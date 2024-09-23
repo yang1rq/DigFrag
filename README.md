@@ -12,11 +12,11 @@ igraph   0.10.6
 ## Usage
 ### If you want to use DigFrag to segment drug (or pesticde) molecules, run these commands:
 ```
-python segment_Drug.py --pred_path=mol.csv --model_path=./checkpoint/BEST_DF_Drug.pth --frag_path=frag_drug.csv --image_path=./image_drugfrag
+python segment_Drug.py --pred_path=mol.csv --model_path=BEST_DF_Drug.pth --frag_path=frag_drug.csv --image_path=./image_drugfrag
 ```
 or
 ```
-python segment_Pesticide.py --pred_path=mol.csv --model_path=./checkpoint/BEST_DF_Pesticide.pth --frag_path=frag_pesticide.csv --image_path=./image_pesticidefrag
+python segment_Pesticide.py --pred_path=mol.csv --model_path=BEST_DF_Pesticide.pth --frag_path=frag_pesticide.csv --image_path=./image_pesticidefrag
 ```
 Where the first parameter is the molecules you want to segment, the second parameter is the trained model(which has been provided), the third parameter is the file where the results will be stored, and the fourth parameter is the folder where the fragment images will be generated.
 
